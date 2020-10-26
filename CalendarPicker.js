@@ -26,7 +26,8 @@ function CalendarPicker(element, options) {
     this._formatDateToInit(this.max);
 
     // Element to insert calendar in.
-    this.userElement = document.querySelector(element);
+    // this.userElement = document.querySelector(element);
+    this.userElement = element; // Allow to attach the calendar to any HTML element, even if not attached to DOM yet
 
     // Setting current date as readable text.
     this._setDateText();
